@@ -11,25 +11,26 @@
         }
 
         header {
-            background-color: #094fcf89;
+            background-color: #941919;
             color: #fff;
             text-align: center;
             padding: 2rem 0;
-            position: relative;
+            position: relative; /* Add this */
         }
 
         .header-content h1 {
             font-size: 2.5rem;
         }
 
+        /* Add styles for the round profile picture */
         .profile-picture {
-            width: 100px;
+            width: 100px; /* Adjust the size as needed */
             height: 100px;
-            border-radius: 75%;
-            object-fit: cover;
-            position: absolute;
-            top: 75px;
-            left: 75px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
         }
 
         nav {
@@ -70,16 +71,17 @@
             border-radius: 20px;
             display: inline-block;
             margin-top: 10px;
+            align-self: center;
         }
 
         .download-button:hover {
-            background-color: #1333e65b;
+            background-color: #555;
         }
 
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #0637d833;
+            background-color: #333;
             color: #fff;
         }
 
@@ -92,9 +94,10 @@
 <body>
     <header>
         <div class="header-content">
-            <img src="Yazhini.jpg" alt="Yazhini's Profile Picture" class="profile-picture">
-            <h1>Yazhini P R </h1>
-            <p>BSc Computer Science</p>
+            <!-- Add your profile picture here -->
+            <img src="yazhini.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Yazhini.P.R</h1>
+            <p>Madras University BSC .Computer Science</p>
         </div>
     </header>
 
@@ -103,27 +106,27 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#languages">Languages</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#resume">Resume</a></li>
+           
         </ul>
     </nav>
 
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p>A highly motivated Computer Science student with a passion for Business Intelligence.
-                Learning Power BI and SQL with strong analytical and decision-making skills. 
-              <p>Eager to apply knowledge in a professional environment and contribute to data-driven insights.</p>
+            <p>I'm a <b>BSC.Computer Science </b>A highly motivated Computer Science student with a passion for development.i am currently pursuing a degree in this field and excited to learn and development.
+                Learning Power python and java with strong analytical and decision-making skills.Eager to apply knowledge in a professional environment and contribute to data-driven insights</p>
+
         </div>
     </section>
 
     <section id="education">
         <div class="section-content">
             <h2>Education</h2>
-            <p>Shri Shankarlal Sundarbai Shasun Jain College for Women (T-nagar)</p>
-            <h2>batch</h2>
-            <p>(2023-2026)</p>
+            <p>Madras University BSC computer science</p>
+            
+            
         </div>
     </section>
 
@@ -131,21 +134,14 @@
         <div class="section-content">
             <h2>Skills</h2>
             <ul>
-                <li>Excel</li>
-                <li>Analytical Thinking</li>
-                <li>Decision-Making</li>
-                <li>MS Office certificate</li>
-                <li>HTML</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="languages">
-        <div class="section-content">
-            <h2>Languages</h2>
-            <ul>
-                <li>English</li>
-                <li>Tamil</li>
+                <li>Html</li>
+                <li>Word</li>
+                
+                <li>Python</li>
+                
+                
+                <li>Java</li>
+               
             </ul>
         </div>
     </section>
@@ -154,30 +150,37 @@
         <div class="section-content">
             <h2>Projects</h2>
             <ul>
-                <li><a href="#">Digital Portfolio</a></li>
+                <li><a href="#">Digital Protofolio</a></li>
+                
+                <!-- Add more project links here -->
             </ul>
         </div>
     </section>
 
     <section id="resume">
+    
         <div class="section-content">
             <center>
             <h2>Resume</h2>
-            <a href="Resume.Yazhini.P.R.pdf" target="_blank" class="download-button">Download CV</a>
+            <a href="Resume_Yazhini.P.R.pdf" target="_blank" class="download-button">Download CV</a>
         </center>
         </div>
+        
     </section>
 
     <footer>
-        <p>&copy; 2025 Yazhini P R</p>
+        <p>&copy; 2025 Yazhini.P.R</p>
     </footer>
 
     <script>
+        // Smooth scrolling to section when clicking on navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
+
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
+
                 if (targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop,
